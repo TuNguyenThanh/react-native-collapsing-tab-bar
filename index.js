@@ -361,6 +361,7 @@ const ScrollableTabView = createReactClass({
 		if (this.props.collapsableBar) {
 			return <ScrollView
 				ref={(comp) => { this.collapseRef = comp }}
+		 		bounces={false}
 				pointerEvents={'box-none'}
 				onScroll={this.handleCollapseScroll}
 				scrollEventThrottle={16}
